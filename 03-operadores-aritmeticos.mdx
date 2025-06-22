@@ -1,0 +1,48 @@
+# Operadores Aritmeticos
+
+Simbolos especiales que nos sirven para reaklizar operaciones matematicas
+
+| Operador | Símbolo         | Nombre              | Ejemplo  | Resultado |
+| -------- | --------------- | ------------------- | -------- | --------- |
+| +        | Suma            | Adición             | `5 + 3`  | 8         |
+| -        | Resta           | Sustracción         | `5 - 3`  | 2         |
+| \*       | Multiplicación  | Producto            | `5 * 3`  | 15        |
+| /        | División        | Cociente            | `6 / 2`  | 3.0       |
+| %        | Módulo          | Residuo de división | `5 % 3`  | 2         |
+| \*\*     | Potencia        | Exponenciación      | `2 ** 3` | 8         |
+| //       | División entera | Cociente entero     | `7 // 2` | 3         |
+
+## Ejemplo
+
+```java
+public class OperadoresAritmeticos {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 3;
+        double x = 5.0;
+        double y = 2.0;
+
+        // Suma
+        System.out.println("Suma: " + (a + b)); // 8
+
+        // Resta
+        System.out.println("Resta: " + (a - b)); // 2
+
+        // Multiplicación
+        System.out.println("Multiplicación: " + (a * b)); // 15
+
+        // División entera
+        System.out.println("División entera: " + (a / b)); // 1
+
+        // División decimal
+        System.out.println("División decimal: " + (x / y)); // 2.5
+
+        // Módulo (residuo)
+        System.out.println("Módulo: " + (a % b)); // 2
+
+        // Potencia (usando Math.pow)
+        System.out.println("Potencia: " + Math.pow(2, 3)); // 8.0
+    }
+}
+
+```
