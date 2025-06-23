@@ -1,0 +1,58 @@
+# Operadores Logicos
+
+## && — AND lógico (cortocircuito)
+
+Devuelve true solo si ambas condiciones son verdaderas. Si la primera es false, la segunda no se evalúa 
+
+```java
+int x = 5, y = 7;
+if (x > 3 && y < 10) {
+    System.out.println("Ambas condiciones son verdaderas");
+}
+```
+
+## || — OR lógico (cortocircuito)
+
+Devuelve true si al menos una condición es verdadera. Si la primera es true, no evalúa la segunda .
+
+```java
+int x = 5, y = 7;
+if (x > 10 || y < 10) {
+    System.out.println("Al menos una condición es verdadera");
+}
+```
+
+## ! — NOT lógico
+
+Invierte el valor booleano: true → false, false → true 
+
+```java
+boolean lluvia = true;
+if (!lluvia) {
+    System.out.println("No está lloviendo");
+} else {
+    System.out.println("Sí está lloviendo");
+}
+```
+
+### Ejemplo completo
+
+```java
+int edad = 20;
+boolean tieneLicencia = true;
+boolean esAdulto = edad >= 18;      // true
+
+if (esAdulto && tieneLicencia) {
+    System.out.println("Puede conducir"); // Se imprime
+}
+
+boolean estaLluvioso = false;
+if (esAdulto || estaLluvioso) {
+    System.out.println("Puede conducir con precaución"); // Se imprime
+}
+
+boolean noLicencia = !tieneLicencia; // false
+
+boolean exclusivo = (edad > 18) ^ tieneLicencia;
+// true solo si una de las condiciones es distinta
+```
