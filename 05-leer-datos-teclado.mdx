@@ -1,0 +1,31 @@
+# Leer Datos de Teclado
+
+```java
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+        // Leer un texto
+        System.out.print("Ingresa tu nombre: ");
+        String nombre = scanner.nextLine();
+
+        // Leer un número entero
+        System.out.print("Ingresa tu edad: ");
+        int edad = scanner.nextInt();
+
+        // Leer un número decimal
+        System.out.print("Ingresa tu altura (en metros): ");
+        double altura = scanner.nextDouble();
+
+        // Mostrar los datos ingresados
+        System.out.println("\nDatos ingresados:");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Altura: " + altura);
+
+        scanner.close(); // Cierra el escáner para liberar recursos
+    }
+}
+```
