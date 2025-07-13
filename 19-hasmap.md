@@ -33,3 +33,21 @@ public class Main {
     }
 }
 ```
+
+ ## Otro ejemplo
+
+```java
+import java.util.HashMap;
+
+public class Main{
+    public static void main(String[] args) {
+        HashMap <String, Integer> frutas = new HashMap<>();
+        frutas.put("Manzana", 10);
+        frutas.put("Pera", 10);
+        
+        for (String name: frutas.keySet()) {
+                System.out.println(name);
+        }
+    }
+}
+```
